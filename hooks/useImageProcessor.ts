@@ -31,7 +31,7 @@ export const useImageProcessor = (): UseImageProcessorReturn => {
     }
     const objectUrl = URL.createObjectURL(originalFile);
     setOriginalPreviewUrl(objectUrl);
-    
+
     return () => URL.revokeObjectURL(objectUrl);
   }, [originalFile]);
 
@@ -69,17 +69,17 @@ export const useImageProcessor = (): UseImageProcessorReturn => {
     if (!processedImageUrl) return;
     const link = document.createElement('a');
     link.href = processedImageUrl;
-    const fileName = originalFile?.name.replace(/\.[^/.]+$/, "") || 'image';
+    const fileName = originalFile?.name.replace(/\.[^/.]+$/, '') || 'image';
     link.download = `${fileName}-autumn.png`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   }, [processedImageUrl, originalFile]);
-  
+
   const handleShare = useCallback(async () => {
     if (!processedImageUrl) return;
 
-    const fileName = originalFile?.name.replace(/\.[^/.]+$/, "-autumn.png") || 'autumn-image.png';
+    const fileName = originalFile?.name.replace(/\.[^/.]+$/, '-autumn.png') || 'autumn-image.png';
 
     try {
       const res = await fetch(processedImageUrl);
@@ -128,4 +128,3 @@ export const useImageProcessor = (): UseImageProcessorReturn => {
     handleReset,
   };
 };
-

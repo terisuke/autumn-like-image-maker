@@ -106,7 +106,7 @@ GitHubでリポジトリが公開されました。
    - 「Import」をクリック
 
 3. **プロジェクト設定**
-   
+
    以下の設定は自動検出されるはずです：
    - **Framework Preset**: Vite
    - **Build Command**: `npm run build`
@@ -114,14 +114,14 @@ GitHubでリポジトリが公開されました。
    - **Install Command**: `npm install`
 
 4. **環境変数を設定**
-   
+
    「Environment Variables」セクションで：
-   
+
    ```
    Name: GEMINI_API_KEY
    Value: (あなたのGemini APIキー)
    ```
-   
+
    - すべての環境（Production, Preview, Development）にチェック
    - 「Add」をクリック
 
@@ -131,7 +131,7 @@ GitHubでリポジトリが公開されました。
    - デプロイされたURLが表示されます
 
 6. **URLをREADMEに追加**
-   
+
    ```bash
    # README.mdを編集してデプロイURLを追加
    # デモセクションを更新
@@ -192,4 +192,3 @@ git push
 ---
 
 おめでとうございます！🎉 あなたのアプリが公開されました！
-

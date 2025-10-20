@@ -26,12 +26,14 @@
 ### Pull Request
 
 1. **Forkしてクローン**
+
    ```bash
    git clone https://github.com/your-username/autumn-like-image-maker.git
    cd autumn-like-image-maker
    ```
 
 2. **ブランチを作成**
+
    ```bash
    git checkout -b feature/your-feature-name
    # または
@@ -39,11 +41,13 @@
    ```
 
 3. **依存関係をインストール**
+
    ```bash
    npm install
    ```
 
 4. **環境変数を設定**
+
    ```bash
    cp .env.example .env.local
    # .env.localを編集してAPIキーを設定
@@ -55,18 +59,21 @@
    - テストを追加/更新（該当する場合）
 
 6. **ローカルでテスト**
+
    ```bash
    npm run dev
    npm run build
    ```
 
 7. **コミット**
+
    ```bash
    git add .
    git commit -m "feat: 新機能の説明" # または "fix: バグ修正の説明"
    ```
 
 8. **Push**
+
    ```bash
    git push origin feature/your-feature-name
    ```
@@ -109,6 +116,7 @@ Conventional Commitsに従ってください：
 - `chore:` ビルドプロセスやツールの変更
 
 例：
+
 ```
 feat: 画像のフィルタープレビュー機能を追加
 fix: モバイルでのタッチ操作のバグを修正
@@ -161,4 +169,3 @@ docs: READMEにデプロイ手順を追加
 ---
 
 Happy Coding! 🍂
-

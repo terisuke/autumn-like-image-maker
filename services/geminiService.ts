@@ -1,10 +1,9 @@
-
-import { GoogleGenAI, Modality } from "@google/genai";
+import { GoogleGenAI, Modality } from '@google/genai';
 import { ERROR_MESSAGES } from '../constants';
 
 const API_KEY = process.env.API_KEY;
 if (!API_KEY) {
-    throw new Error(ERROR_MESSAGES.API_KEY_MISSING);
+  throw new Error(ERROR_MESSAGES.API_KEY_MISSING);
 }
 
 const ai = new GoogleGenAI({ apiKey: API_KEY });
@@ -39,7 +38,7 @@ export const autumnifyImage = async (base64Data: string, mimeType: string): Prom
 
     throw new Error(ERROR_MESSAGES.NO_PROCESSED_IMAGE);
   } catch (error) {
-    console.error("Error calling Gemini API:", error);
+    console.error('Error calling Gemini API:', error);
     throw new Error(ERROR_MESSAGES.API_PROCESSING_FAILED);
   }
 };

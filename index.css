@@ -1,10 +1,9 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --color-autumn-orange: #D97706;
-  --color-autumn-brown: #78350F;
-  --color-autumn-yellow: #FBBF24;
-  --color-autumn-cream: #FEF3C7;
-  --color-autumn-bg: #FFFBEB;
+  --color-autumn-orange: #d97706;
+  --color-autumn-brown: #78350f;
+  --color-autumn-yellow: #fbbf24;
+  --color-autumn-cream: #fef3c7;
+  --color-autumn-bg: #fffbeb;
 }
-
