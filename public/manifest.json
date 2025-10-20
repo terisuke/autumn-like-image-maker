@@ -1,0 +1,25 @@
+{
+  "name": "秋風画像メーカー",
+  "short_name": "秋風メーカー",
+  "description": "AIであなたの写真を素敵な秋の雰囲気に変身させましょう",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFBEB",
+  "theme_color": "#D97706",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
+

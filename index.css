@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-autumn-orange: #D97706;
+  --color-autumn-brown: #78350F;
+  --color-autumn-yellow: #FBBF24;
+  --color-autumn-cream: #FEF3C7;
+  --color-autumn-bg: #FFFBEB;
+}
+
