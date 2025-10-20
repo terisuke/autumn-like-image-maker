@@ -74,6 +74,7 @@ All UI components receive props from `useImageProcessor` hook—no internal stat
 ### Gemini API Integration
 
 The prompt in `services/geminiService.ts:25` is carefully crafted to:
+
 - Transform **only** foliage and leaves to autumn colors
 - Preserve sky, buildings, people, and non-plant objects
 - Avoid simple color filters
@@ -84,13 +85,16 @@ The prompt in `services/geminiService.ts:25` is carefully crafted to:
 ### File Type Handling
 
 Constants defined in `constants.ts:1`:
+
 - Valid types: `image/jpeg`, `image/png`, `image/webp`
 - Validation happens in `useImageProcessor.ts:39-42`
 
 ## Code Conventions
 
 ### Import Organization
+
 Imports follow this pattern (see App.tsx:1-7):
+
 1. React imports
 2. Component imports
 3. Constants/utilities
@@ -98,16 +102,19 @@ Imports follow this pattern (see App.tsx:1-7):
 5. Types
 
 ### TypeScript Strictness
+
 - All React components use `React.FC` type
 - Hook returns are explicitly typed (e.g., `UseImageProcessorReturn` interface)
 - Constants use `as const` assertions for type narrowing
 
 ### Path Aliases
+
 The project uses `@/*` alias (tsconfig.json:21-24, vite.config.ts:18-20) for absolute imports from project root.
 
 ## Deployment
 
 Hosted on Vercel with:
+
 - Build command: `npm run build` (vercel.json:2)
 - Output directory: `dist`
 - SPA routing via catch-all rewrite to `/index.html`

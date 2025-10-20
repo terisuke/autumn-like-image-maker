@@ -34,9 +34,7 @@ export class ErrorBoundary extends Component<Props, State> {
         <div className="min-h-screen flex items-center justify-center p-4 bg-autumn-bg">
           <div className="max-w-md w-full bg-white rounded-2xl shadow-xl p-8 text-center">
             <div className="text-6xl mb-4">😞</div>
-            <h1 className="text-2xl font-bold text-autumn-brown mb-4">
-              エラーが発生しました
-            </h1>
+            <h1 className="text-2xl font-bold text-autumn-brown mb-4">エラーが発生しました</h1>
             <p className="text-gray-600 mb-6">
               申し訳ございません。予期しないエラーが発生しました。
               ページを再読み込みして、もう一度お試しください。
@@ -65,4 +63,3 @@ export class ErrorBoundary extends Component<Props, State> {
     return this.props.children;
   }
 }
-

@@ -1,4 +1,3 @@
-
 export enum ProcessingStatus {
   Idle = 'idle',
   Loading = 'loading',
