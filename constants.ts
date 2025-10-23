@@ -1,6 +1,7 @@
 export const VALID_IMAGE_TYPES = ['image/jpeg', 'image/png', 'image/webp'];
 
-export const SHARE_TEXT = 'AIで写真を秋風に加工しました！ #秋は俺が作る';
+export const SHARE_TEXT =
+  'AIで写真を秋風に加工しました！ #秋は俺が作る https://autumn-like-image-maker.vercel.app/';
 
 export const ERROR_MESSAGES = {
   INVALID_FILE_TYPE:
